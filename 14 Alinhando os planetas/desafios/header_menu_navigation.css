@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+header{
+    padding: 4rem;
+    background: lightgray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;   /* deixa cada um nas suas estremidades */
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;   /* retira estilo da lista */
+    align-items: center;
+    gap: .8rem;
+}
+
+ul li:last-child {  /* last-child pega o ultimo elemento filho */
+    background: black;
+    color: white;
+    padding: .8rem;
+
+}
+

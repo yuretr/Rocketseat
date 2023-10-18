@@ -1,0 +1,39 @@
+<!--
+    <input type="number"/>
+
+    - Entrada de números
+
+    # Atributos
+    - min/max
+    - step
+-->
+
+<input type="number">
+
+<br><br>
+
+<form action="">
+    <input type="number" min="2" max="89">
+    <!-- menos que dois ele não aceita, e mais que 89 também não -->
+    <button>Enviar</button>
+</form>
+
+<br><br>
+
+<form action="">
+    <input type="number" step="3">
+    <!-- step, é a forma de contagem, padrão é de 1 em 1 -->
+    <button>Enviar</button>
+</form>
+
+<br><br>
+
+<datalist id="numbers">
+    <option>99</option>
+</datalist>
+<form action="">
+    <input type="number" step="3" list="numbers">
+    <!-- step, é a forma de contagem, padrão é de 1 em 1 -->
+    <button>Enviar</button>
+</form>
+

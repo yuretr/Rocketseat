@@ -1,0 +1,72 @@
+<!--
+    <button>
+
+    - Representa um botão
+    - Usado para enviar formulários
+    - É estilizado pelo user agent    (navegador)
+
+    Atributos comuns
+    - type
+        - submit
+        - reset
+        - button
+    - autofocus
+    - disabled
+    - name
+    - value
+    - form
+-->
+
+<button>Enviar</button>     <!-- estilo do user agente -->
+
+<br><br>
+
+<button type="button">Enviar</button>
+<!-- fazer com que o formulário seja enviado -->
+
+<br><br>
+
+<button type="submit">Enviar</button>
+<!-- também entende que deve ser enviado, mas usar o submit -->
+
+<br><br>
+
+<form action="">
+    <input type="text" value="descreva aqui">
+    <button type="reset">Limpar</button>
+    <!-- limpar o formulário -->
+</form>
+
+<br><br>
+
+<button autofocus>Enviar</button>
+<!-- foco já fica nele, por exemplo se bater o enter, vai direto nele para enviar -->
+
+<br><br>
+
+<button disabled>Enviar</button>
+<!-- bom para utilizar, quando não quer que a pessoa aperta antes da pessoa tier preenchido tudo -->
+
+<br><br>
+
+<button type="submit" name="button" value="Valor qualquer">Enviar</button>
+<!-- quando submeter esse formulário, o valor vai ser recebido como button -->
+
+<br><br>
+
+<form action="" id="meu-formulario"></form>
+<button type="submit" form="meu-formulario">Enviar</button>
+<!-- ele vai procurar o fomulário na página e vai enviar -->
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+

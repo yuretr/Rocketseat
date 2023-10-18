@@ -1,0 +1,60 @@
+<!--
+    SVG <svg>
+    
+    É uma marcação, estilo html, mas não é para textos, e sim para fazer imagens. Possuimos elementos para gerar formas.
+
+    Para entender melhor
+    - Imagem rasterizada x Imagem vetorizada
+
+    Benefícios
+    - Mais leve
+    - Mais detalhada
+    - Maior acessibilidade e SEO
+    - Pode ser editada via CSS ou atributos
+
+    Desvantagens
+    - Pode ser mais complicado de trabalhar
+    - Quanto mais complexa a imagem, mais trabalho para o navegador
+    - Navegadores mais antigos não possuem suporte a essa tag
+
+    Para fotografias, ainda prefira usar imagens rasterizadas.
+-->
+
+<img src="./ball.png" alt="">
+
+<br><br>
+
+<svg 
+  version="1.1"
+  baseProfile="full"
+  width="100" 
+  height="100"
+  xmlns="http://www.w3.org/2000/svg"  
+  >
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+<!-- imagens rasterizadas, .png, .jpeg, .jpg, são pixeladas -->
+<!-- xmlns protocolo, regras pra pode estar usando -->
+
+
+
+<br><br>
+<br><br>
+
+<!-- SVG -->
+
+<svg style="background-color:bisque" width="200" height="200">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+<!-- cx, cy, posicionamento do eixo (considerando o meio do círculo), r é o raio (tamanho), stroke é a borda, fill é o preenchimento -->
+
+
+<svg width="300" height="200">
+    <rect width="100%" height="100%" fill="blue" stroke="pink" stroke-width="7">
+</svg>
+
+<!-- uma desvantagem é que os navegadores guarda imagens em cache pra ficar mais rápido, e com svg não fazem isso -->
+
+

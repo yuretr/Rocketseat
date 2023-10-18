@@ -1,0 +1,67 @@
+<script>
+
+
+{
+    let x = 0
+    console.log(x)
+
+}
+
+
+// ---------------------------------------
+
+
+// var é global e poderá funcionar fora de um escopo de bloco
+console.log('> existe x antes do bloco?', x)
+
+// var é global e também local
+{
+    var x = 0
+} // dentro é local, e fora dessas chaves é global
+// até aqui o x fica undefined, porque só tem valor após o primeiro código que chama a variável
+
+console.log('> existe x depois do bloco?', x)
+
+
+// ---------------------------------------
+
+
+// quando acontece isso, o JS deixa por debaixo dos panos assim:
+
+var x
+console.log('> existe x antes do bloco?', x)
+
+{
+    x = 0
+}
+
+console.log('> existe x depois do bloco?', x)
+
+
+// ---------------------------------------
+
+
+// const e let são locais e só funcionam no escopo onde foi criada
+console.log('> existe y antes do bloco?', y)
+
+{
+    let y = 0
+}
+// a diferença é que só funciona dentro do bloco
+
+console.log('> existe y depois do bloco?', y)
+
+
+// ---------------------------------------
+
+
+const y = 1
+
+{
+    const y = 0
+    console.log(y)
+} // aqui será 0
+
+console.log(y)
+// aqui será 0 também, pois manteve a definição do bloco sendo const
+</script>

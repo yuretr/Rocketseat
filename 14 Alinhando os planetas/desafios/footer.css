@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;   /* colocar altura mínima de 100% */
+    display: flex;
+}
+
+footer {
+    margin-top: auto;
+    background: lightgray;
+    height: 8rem;
+    flex: 1;
+
+    display: flex;
+    align-items: center;   /* alinha dentro da linha */
+    justify-content: center;   /* alinha no centro do eixo */
+}
+

@@ -1,0 +1,12 @@
+img {
+    width: 30%;
+    height: auto;
+}
+
+.gallery {
+    display: flex;   /* vai deixar flex, um ao lado do outro */
+    flex-wrap: wrap;   /* vai quebrar a linha */
+    gap: .8rem;
+    justify-content: center;
+}
+

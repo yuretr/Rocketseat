@@ -1,0 +1,39 @@
+<!--
+    <video>
+    
+    - src
+    - controls
+    - se não funcionar?
+        - fallback content
+    - source
+        - src
+        - type
+
+    - sobre serviços de terceiros
+-->
+
+<video controls 
+    width="600" 
+    height="350" 
+    autoplay 
+    preload="auto"
+    loop
+    muted
+    poster="./ball.png">
+<!-- se deixar o autoplay, alguns servidores tem privacidade e não deixa -->
+<!-- preloud: auto (começa a fazer a leitura do vídeo antes), metadata (só carrega aquilo que for básico), none (não carregar nada, antes de apertar o botão) -->
+<!-- loop fica voltando ao inicio depois que finaliza, sem fim -->
+<!-- muted deixa sem som, mutado funciona em autoplay -->
+<!-- poster, posso colocar imagem de fundo até começar -->
+
+    <source src="https://www.youtube.com/watch?v=MWfwNmHHZDE" type="video/mp4">
+    <source src="./exemplovideo.mp4" type="video/mp4">
+    <p> Este browser não suporta o vídeo. </p>
+</video>
+
+<!-- O ideal é deixar o vídeo de um servidor externo, por exemplo no Youtube, para não carregar o trafego de banda do servidor hospedado o site/código -->
+
+<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MWfwNmHHZDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!-- Incorporado do próprio Youtube -->

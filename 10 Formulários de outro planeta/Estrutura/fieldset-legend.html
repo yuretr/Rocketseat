@@ -1,0 +1,62 @@
+<!--
+    <fieldset>
+    - agrupamento de campos
+    - mesmo propósito
+    - semântico
+    - acessibilidade
+
+    Atributos especiais
+    - disabled
+        - detabilita todos os elementos internos
+        - não serão enviados ao submeter o formulário
+    - form
+        - o id de um formulário ao qual esse fieldset pertence
+        - não precisa estar dentro do formulário
+    - name
+        - nome do grupo
+    
+    <legend>
+    - nome do agrupamento
+    - primeiro elemento dentro do fieldset
+-->
+
+<form action="">
+    <fieldset disabled>     <!-- se colocar disable, não funciona -->
+        <legend>Contato: </legend>
+        <label for="">Nome:</label>
+        <input type="text">
+    </fieldset>
+</form>
+
+<br><br>
+
+
+<form action="">
+    <fieldset>
+        <legend>Contato: </legend>
+        <label for="">Nome:</label>
+        <input type="text">
+    </fieldset>
+</form>
+
+<br><br>
+
+
+<form id="contato" action="">
+    <button>Enviar</button>
+</form>
+
+<fieldset form="contato" name="inputs-contact">
+    <!-- name pra deixar ele mais claro -->
+    <legend>Contato: </legend>
+    <label for="">Nome:</label>
+    <input type="text">
+</fieldset>
+<!-- pode fazer separado, e após clicar enviar, ele envia os dados de todos que escolha com a id -->
+
+
+
+
+
+
+

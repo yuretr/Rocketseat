@@ -1,0 +1,35 @@
+<!--
+    Criando título visíveis para as imagens
+
+    <figure> e <figcaption>
+-->
+
+<div class="figure">
+<a href="https://google.com.br">
+    <img 
+        src="https://rocketseat.com.br/icons/icon-48x48.png" 
+        alt="A imagem por algum motivo não foi carregada em seu navegador." 
+        title="Icone da Rocketseart" 
+        height="250px"
+    >
+</a>
+    <p>Colocar um título na imagem</p>
+</div>
+
+<!-- não é semântico nesse formato -->
+
+
+<a href="https://google.com.br">
+    <figure>
+            <img 
+                src="https://rocketseat.com.br/icons/icon-48x48.png" 
+                alt="A imagem por algum motivo não foi carregada em seu navegador." 
+                title="Icone da Rocketseart" 
+                height="250px"
+            >
+            <figcaption>Colocar um título na imagem</figcaption>
+    </figure>
+</a>
+
+<!-- semântico nesse formato -->
+<!-- tag a por fora, pra ficar link em todo o conteúdo -->

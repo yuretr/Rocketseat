@@ -1,0 +1,3 @@
+- abrir terminal para comandos em node
+- abrir na pasta que deseja começar o projeto
+- comando inicial o projeto em node, npm init -y

@@ -1,0 +1,59 @@
+<!--
+    <input type="checkbox">
+
+    - Caixas que podem ser marcadas
+    - Selecionar um valor para ser enviado
+    - Se não solecionar, não será enviado nenhum dado
+
+    # Atributos
+    - globais
+    - value
+        * valor que aquele campo contém
+        * se não estiver presente, o padrão é 'on'
+    - checked
+        * para deixar o campo marcado por padrão
+-->
+
+<label for="subscribe">Receber Notificações</label>
+<input type="checkbox" name="subscribe" id="subscribe">
+<!-- se eu marcar e enviar, no back-end vai receber subscribe=on,
+     caso não marque, não recebe nada -->
+
+<br><br>
+
+<label for="subscribe">Receber Notificações</label>
+<input type="checkbox" name="subscribe" id="subscribe" value="subscribe">
+<!-- pra receber como subscribe -->
+
+<br><br>
+
+<label for="subscribe">Receber Notificações</label>
+<input type="checkbox" name="subscribe" id="subscribe" checked>
+<!-- já fica marcado -->
+
+<br><br>
+
+
+<!--
+    Marcar Múltiplos Valores?
+
+    - Usaremos o atributo 'name' com o mesmo nome para os diversos campos
+-->
+
+<fieldset>
+    <legend>Choose your interests</legend>
+    <div>
+        <input type="checkbox" id="coding" name="interest" value="coding" checked>
+        <label for="coding">Coding</label>
+    </div>
+    <div>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">Music</label>
+    </div>
+</fieldset>
+
+<!-- lá no back-end, vai receber a informação com o name (interest), por exemplo:
+     interest=coding,music  ou  interest=coding  ou  interest=music , conforme escolher.
+     value é o conteúdo que vai junto para o back-end
+-->
+

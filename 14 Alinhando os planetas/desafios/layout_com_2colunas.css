@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    gap: 1rem;
+    height: 500px;
+}
+
+main div:nth-child(1),
+main div:nth-child(2) {
+    border: 1px solid;
+}
+
+main div:nth-child(1) {
+    background: lightblue;
+    flex-basis: 25%;
+}
+
+main div:nth-child(2) {
+    background: lightgreen;
+    flex: 1;
+}
+

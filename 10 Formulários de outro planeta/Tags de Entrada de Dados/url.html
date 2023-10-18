@@ -1,0 +1,80 @@
+<!--
+    <input type="url"/>
+
+    - Espera que o usuário digite uma url
+    - Irá validar se o valor digitado é uma url
+
+    # Atributos
+
+    - placeholder
+    - readonly / disabled
+    - value
+
+    - required
+
+    - minlenght / maxlenght
+        * O mínimo e/ou máximo valor que o campo poderá conter
+    
+    - size
+        * Valor numérico indicando quantos caracteres esse campo deveria conter, modificando o tamanho do campo para o usuário
+    
+    - pattern
+        * Uso de expressão regular para validar o campo
+        * exemplo: o usuário só poderá colocar domínio com.br
+            * pattern=".*\.com\.br.*"     .*  *. qualquer caractere multiplas vezes
+
+    - list
+        * o id de uma tag <datalist> que está no mesmo documento
+        * <datalist> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário, quais valores estão disponíveis
+                * Os valores do <datalist> que não forem compatíveis com o campo, não serão apresentados como sugestão
+
+    - spellcheck
+        * Habilitar a verificação ortográfica para este input
+
+-->
+
+<form action="">
+    <input type="url"
+    placeholder="http://exemple.com.br"
+    value="http://exemple.com.br"
+    required
+    pattern=".*\.com\.br.*"
+    title="Somente domínios .com.br serão aceitos"
+    >
+    <button type="submit">Enviar</button>
+</form>
+
+<br><br>
+
+
+<datalist id="urlsdata">
+    <option>http://url.com.br</option>
+    <option>https://url2.com.br</option>
+</datalist>
+
+<form action="">
+    <input type="url"
+    placeholder="http://exemple.com.br"
+    required
+    pattern=".*\.com\.br.*"
+    title="Somente domínios .com.br serão aceitos"
+    list="urlsdata"
+    spellcheck="false"
+    >   <!-- false ou true, habilito ou desabilito o spellcheck, dependendo do navegador já vem ativado padrão -->
+    <button type="submit">Enviar</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
